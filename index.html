@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suraj's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="your-photo.jpg" />
+</head>
+<body>
+  <div class="toggle-theme">
+    <label>
+      <input type="checkbox" id="theme-toggle" onchange="toggleTheme()" />
+      Dark Mode
+    </label>
+  </div>
+
+  <nav class="navbar">
+    <div class="logo">Suraj</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="nav-links" id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="resume.pdf" download class="resume-btn">Download Resume</a>
+    </div>
+  </nav>
+
+  <header id="home">
+    <div class="container">
+      <h1>Hi, I'm <span id="typing"></span> 👋</h1>
+      <p>A passionate Web Developer who builds modern websites.</p>
+      <img src="your-photo.jpg" alt="Suraj Photo" class="profile-pic" />
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a creative and dedicated web developer currently interning at Code Craft. I enjoy building elegant and functional web applications.</p>
+      <h3>🎓 Education</h3>
+      <p>Bachelor's in Computer Science</p>
+      <h3>💼 Experience</h3>
+      <p>Intern at Code Craft — Projects: landing page, stopwatch, AI Tic-Tac-Toe, and more.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+
+      <div class="filters">
+        <button onclick="filterProjects('all')">All</button>
+        <button onclick="filterProjects('html')">HTML</button>
+        <button onclick="filterProjects('js')">JavaScript</button>
+      </div>
+
+      <div class="project html">
+        <h3>🌐 Responsive Landing Page</h3>
+        <p>A modern layout built using HTML and CSS.</p>
+        <a href="#">Live Demo</a>
+      </div>
+
+      <div class="project js">
+        <h3>⏱️ Stopwatch App</h3>
+        <p>Simple, responsive stopwatch built with JavaScript.</p>
+        <a href="#">View App</a>
+      </div>
+
+      <div class="project js">
+        <h3>🎮 Tic-Tac-Toe with AI</h3>
+        <p>Advanced Tic-Tac-Toe game with animations, AI opponent, and dark mode.</p>
+        <a href="#">Play Game</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="socials">
+        <a href="https://github.com/surajcoding21" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/suraj-vishwakarma-810464337" target="_blank">LinkedIn</a>
+        <a href="mailto:surajsartaj51@gamail.com">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
